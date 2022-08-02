@@ -16,6 +16,11 @@ body{
     flex-direction: column;
 }
 
+h1{
+    justify-content: center;
+    justify-items: auto;
+}
+
 input{
     padding: 1rem;
     border-radius: 25px;
@@ -23,8 +28,19 @@ input{
     background-color: white;
     font-family: inherit;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
-    min-width: 300px;
+    width: 300px;
+    min-width: 30px;
     font-size: 1rem;
+}
+
+#search{
+    min-width: 30vw;
+}
+
+#btn{
+    min-width:10vw;
+    text-align: center;
+    justify-content: center;
 }
 
 input:focus{
@@ -51,7 +67,8 @@ input:hover{
 .container{
     background-color: #89ABE3FF;
     height: 70vh;
-    width: 30vw;
+    max-height: max-content;
+    min-width: 30vw;
     position: relative;
     text-align: center;
     justify-content: center;
